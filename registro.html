@@ -8,29 +8,73 @@
 <body>
     <h1> Register</h1>
     <form>
-        <label>First name:</label>
+        <label for="fisrt-name">First name:</label>
+        <input type="text" name="fisrt-name" id="fisrt-name" placeholder="First name">
+        <label for="last-name">Last name:</label>
+        <input type="text" name="last-name" id="last-name" placeholder="Last name">
+        <!--No se permite tener dos id iguales en la misma página-->
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="famele">Famale</label>
+            <input type="radio" name="gender" id="famele">
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="Other">
+        </div>
+        <div>
+            <label for="email">Email:</label><input type="email" id="email">
+            <label for="password">Password: *</label><input type="password" name="password" id="password" required
+                placeholder="8 characters" minlength="8">
+        </div>
+        <div>
+            <!--Los spaceholders solo son para los input-->
+            <label>Birthday</label>
+            <select name = "month" required>
+                <option>Month</option>
+                <option>Jan</option>
+                <option value = "1">Feb</option>
+                <option value = "1">Mar</option>
+                <option value = "3">Abr</option>
+                <option value = "4">May</option>
+                <option>Jun</option>
+                <option>Jul</option>
+                <option>Ago</option>
+                <option>Sep</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+            </select>
+            <select name = "day">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>                
+                <option>7</option>    
+            </select>
+            <select>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+            </select>
+        </div>
+        <div>
+            <label for = "terms-conditions">I agree in the terms and conditions</label>
+            <input id = "terms-conditions" type = "checkbox" required>
+        </div>
 
-        <input type="text">
-        <label>Last name:</label>
-        <input type="text">
-        <div>
-            <label>Male</label>
-            <input type="radio" name="gender">
-            <label>Famale</label>
-            <input type="radio" name="gender">
-            <label>Other</label>
-            <input type="radio" name="gender">
-        </div>
-        <div>
-            <label>Email:</label><input type="email">
-            <label>Password:</label><input type="password" name = "password">
-        </div>
+
         <!--Boton para enviar la informacion-->
         <input type="submit" value="Submit">
         <div>
             <a href="index.html">ir al inicio</a>
             <p>
                 <!-- Validador-->
+
                 <a href="https://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10"
                         alt="Valid XHTML 1.0!" height="31" width="88" /></a>
             </p>
